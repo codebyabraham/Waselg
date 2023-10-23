@@ -6,7 +6,7 @@ function App() {
     <Router>
     <Routes>
       <Route path="/" element={<Home />}></Route>
-      <Route path="/growthform" element={<Growthform />}></Route>
+      <Route path="/footer" element={<Footer />}></Route>
       <Route path="/websiteform" element={<Websiteform />}></Route>
       <Route path="/brandingform" element={<Brandingform />}></Route>
       <Route path="/footer" element={<Footer />}></Route>

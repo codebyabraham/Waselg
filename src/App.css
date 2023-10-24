@@ -1,5 +1,6 @@
 #funfacts{
     background-image: url(./images/fun-facts-bg.jpg);
+    /* padding: 5rem; */
 }
 #text-content{
     position: absolute;
@@ -45,4 +46,23 @@
     border-radius: 30px;
     border: none;
     display: inline-block; 
+}
+#btn2:hover{
+    background-color: #fff;
+    color: #6acf06;
+}
+#counts{
+    color: #6acf06;
+}
+#card-section, #review{
+    background-color: #f7f7f7;
+}
+#aims{
+    padding: 5rem;
+}
+#review{
+    padding: 1rem 2rem;
+}
+.form-control{
+    border: #6acf06 1px solid;
 }

@@ -30,11 +30,12 @@ function Navbar() {
   
   return (
     <>
+     
       <nav class="navbar navbar-expand-lg p-0 mb-5 fixed-top">
         <div class="container mx-auto">
           <Link class="navbar-brand" to="/">
           {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
-          texttt
+          WASE STUDENT SCHOLARSHIP SCHEME
           </Link>
 
           <button style={{border: '1px white solid'}}
@@ -71,22 +72,32 @@ function Navbar() {
                   <Link
                     type="button"
                     id="bttt"
-                    class="nav-link btn rounded-1"
+                    class="nav-link"
                     aria-current="page"
-                    to="/growthform"
+                    to="/"
                   >
-                    Grow my Brand
+                    Home
                   </Link>
                 </li>
                
-                <li class="nav-item m-3 dropdown dropstart">
+                <li class="nav-item m-3">
                   <Link
-                  id="primary"
-                    class="nav-link btn bg-white text-center border rounded"
-                    href="#"
+                  id="bttt"
+                    class="nav-link"
+                    to="/contact"
                     role="button"
                   >
                     Contact Us
+                  </Link>
+                </li>
+                <li class="nav-item m-3">
+                  <Link
+                  id="bttt"
+                    class="nav-link"
+                    to="/about"
+                    role="button"
+                  >
+                    About Us
                   </Link>
                 </li>
               </ul>

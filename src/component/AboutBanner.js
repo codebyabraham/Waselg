@@ -19,8 +19,8 @@ function AboutBanner() {
     <div class="carousel-item active" >
       <img src={pageheading} class="d-block w-100" alt="..." />
       <div class="carousel-caption d-md-block" >
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
+        <h5 class="fs-1">About Us</h5>
+        <p>SUPPORTING NUMEROUS STUDENTS IN THEIR EDUCATION JOURNEY!</p>
       </div>
     </div>
 </div>

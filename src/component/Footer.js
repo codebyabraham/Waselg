@@ -4,7 +4,7 @@ import React from 'react'
 function Footer() {
   return (
     <>
-     <div id='bottom' style={{maxHeight:'250vh',padding: '40vh 0 0', position: 'relative' }} className="container-fluid bg-black text-white mx-auto">
+     <div id='bottom' style={{maxHeight:'250vh',padding: '18vh 0 0', position: 'relative' }} className="container-fluid bg-black text-white mx-auto">
          <div className="container">
     <div className="row">
     <div className="col-md-3">

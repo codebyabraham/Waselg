@@ -12,29 +12,28 @@ function Contact() {
 <Navbar />
 <ContactBanner />
   <div style={{margin:'4.5rem 0.5rem'}} class="p-3 rounded-4 row justify-content-center text-center py-5 text-white">
-        <div class="col-md-12">
-            <h2 id='primary' class="mb-4 mx-auto shadow-sm col-md-6 pb-2" style={{borderBottom: '1px blue solid'}}>What our Clients are saying</h2>
+        <div class="col-md-12 container-fluid">
             <div class="row justify-content-center">
-                <div id='review' class="col-lg-3 rounded shadow m-3 p-4">
-                    {/* <img class="img-fluid rounded-circle mb-3" src={bill} alt="Client 1"/> */}
-                    <div class="h4 text-black">Bill Gates</div>
-                    <div class="text-muted mb-3">Founder, Microsoft</div>
+                <div id='review' class="col-lg-3 rounded shadow m-3">
+                <img className='m-3' width="50" height="50" src="https://img.icons8.com/ios-filled/50/02A12F/phone.png" alt="phone"/>
+                    <div class="h4 text-black">Phone</div>
+                    <div class="text-muted mb-3">Call or send sms any time of the day</div>
                   
-                    <p class="mt-3 text-black">"JL Media transformed our processes, boosting productivity and saving costs. Their tailored approach was a game-changer for our growth."</p>
+                    <p class="mt-3 text-black">Along Emir Street Opp. Unity Bank PLC</p>
                 </div>
-                <div id='review' class="col-lg-3 rounded shadow m-3 p-4">
-                    {/* <img class="img-fluid rounded-circle mb-3" src={bill} alt="Client 1"/> */}
-                    <div class="h4 text-black">Bill Gates</div>
-                    <div class="text-muted mb-3">Founder, Microsoft</div>
+                <div id='review' class="col-lg-3 rounded shadow m-3">
+                <img className='m-3' width="50" height="50" src="https://img.icons8.com/fluency-systems-filled/48/02A12F/new-post.png" alt="new-post"/>
+                    <div class="h4 text-black">Email</div>
+                    <div class="text-muted mb-3">Fell free to send us messege</div>
              
-                    <p class="mt-3 text-black">"Our digital presence soared with this tech company's cutting-edge solutions. Increased engagement led to higher revenue and market share. A decision we celebrate."</p>
+                    <p class="mt-3 text-black">info@wasss.com.ng</p>
                 </div>
-                <div id='review' class="col-lg-3 rounded shadow m-3 p-4">
-                    {/* <img class="img-fluid rounded-circle mb-3" src={bill} alt="Client 1"/> */}
-                    <div class="h4 text-black">Bill Gates</div>
-                    <div class="text-muted mb-3">Founder, Microsoft</div>
+                <div id='review' class="col-lg-3 rounded shadow m-3">
+                <img className='m-3' width="50" height="50" src="https://img.icons8.com/ios-filled/50/02A12F/marker.png" alt="marker"/>
+                    <div class="h4 text-black">Location</div>
+                    <div class="text-muted mb-3">Along Emir Street Opp. Unity Bank PLC</div>
              
-                    <p class="mt-3 text-black">"Impressed by this tech company's seamless solutions. They made us agile, enhancing collaboration and scalability. Highly recommend for any business aiming to thrive."</p>
+                    <p class="mt-3 text-black">Along Emir Street Opp. Unity Bank PLC</p>
                 </div>
             </div>
         </div>
@@ -54,7 +53,7 @@ function Contact() {
   </div>
   <div class="col-12">
     <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St"/>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St "/>
   </div>
  
  

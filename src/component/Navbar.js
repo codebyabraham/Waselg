@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from './images/logo.png';
-import './App.css'
+// import logo from './images/logo.png';
+import '../App.css'
 
 
 function Navbar() {
@@ -30,10 +30,12 @@ function Navbar() {
   
   return (
     <>
+     
       <nav class="navbar navbar-expand-lg p-0 mb-5 fixed-top">
         <div class="container mx-auto">
           <Link class="navbar-brand" to="/">
-          <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' />
+          {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
+          WASE STUDENT SCHOLARSHIP SCHEME
           </Link>
 
           <button style={{border: '1px white solid'}}
@@ -55,7 +57,7 @@ function Navbar() {
           >
             <div class="offcanvas-header">
             <Link class="navbar-brand" to="/">
-          <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' />
+          {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
           </Link>
               <button
                 type="button"
@@ -70,83 +72,33 @@ function Navbar() {
                   <Link
                     type="button"
                     id="bttt"
-                    class="nav-link btn rounded-1"
+                    class="nav-link"
                     aria-current="page"
-                    to="/growthform"
+                    to="/"
                   >
-                    Grow my Brand
+                    Home
                   </Link>
                 </li>
                
-                <li class="nav-item m-3 dropdown dropstart">
+                <li class="nav-item m-3">
                   <Link
-                  id="primary"
-                    class="nav-link bg-white text-center dropdown-toggle border rounded"
-                    href="#"
+                  id="bttt"
+                    class="nav-link"
+                    to="/contact"
                     role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
                   >
                     Contact Us
                   </Link>
-                  <ul class="dropdown-menu dropdown-menu-dark">
-                    <li>
-                      <div class="col mx-auto rounded p-5">
-                        <div class="card-body text-center">
-                          <h3 class="col-p slider-head">Contact Details</h3>
-                          <p>Feel free to contact us with questions</p>
-                          <div>
-                            <b>Email:</b> jlmedia.hub8@gmail.com
-                          </div>
-                          <Link
-                            href="https://x.com/jlmediaglobal?t=AnTim-6NKXDCSKqb5pZbXg&s=09"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img
-                              width="48"
-                              height="48"
-                              src="https://img.icons8.com/color/48/twitter--v1.png"
-                              alt="twitter--v1"
-                            />
-                          </Link>
-                          <Link href="" target="_blank" rel="noopener noreferrer">
-                            <img
-                              width="48"
-                              height="48"
-                              src="https://img.icons8.com/color/48/tiktok--v1.png"
-                              alt="tiktok--v1"
-                            />
-                          </Link>
-                          <Link
-                            to="https://instagram.com/jlmediaglobal?igshid=MzRlODBiNWFlZA=="
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img
-                              width="48"
-                              height="48"
-                              src="https://img.icons8.com/color/48/instagram-new--v1.png"
-                              alt="instagram-new--v1"
-                            />
-                          </Link>
-                          <Link to='https://www.facebook.com/profile.php?id=100087289263138&mibextid=ZbWKwL'>
-
-                          <img width="48" height="48" src="https://img.icons8.com/color/48/facebook.png" alt="facebook"/>
-
-                          </Link>
-                          <Link to='https://www.linkedin.com/company/jlmediaglobal/'>
-
-                          <img width="48" height="48" src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkedin"/>
-                          </Link>
-                          <Link to='jlmedia.hub8@gmail.com'>
-
-                          <img width="48" height="48" src="https://img.icons8.com/color/48/gmail-new.png" alt="gmail-new"/>
-                          </Link> 
-                        </div>
-                      </div>
-                    </li>
-                  </ul>
+                </li>
+                <li class="nav-item m-3">
+                  <Link
+                  id="bttt"
+                    class="nav-link"
+                    to="/about"
+                    role="button"
+                  >
+                    About Us
+                  </Link>
                 </li>
               </ul>
             </div>

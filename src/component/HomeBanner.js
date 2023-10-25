@@ -5,6 +5,7 @@ import banner3 from "../images/slide_03.jpg";
 import "../App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Carousel } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function HomeBanner() {
   return (
@@ -16,7 +17,7 @@ function HomeBanner() {
         <h5 id='text2'>we are here</h5>
         <p>Some representative placeholder content for the third slide.</p>
         <p>lorem</p>
-        <button id="button">Application Form</button>
+        <Link to='/virtualnin' id="button">Application Form</Link>
       </div>
           <img
             className="d-block w-100 custom-carousel-image"
@@ -32,7 +33,7 @@ function HomeBanner() {
 
         <p>Some representative placeholder content for the third slide.</p>
         <p>lorem</p>
-        <button id="button">Application Form</button>
+        <Link to='/virtualnin' id="button">Application Form</Link>
       </div>
           <img
             className="d-block w-100 custom-carousel-image"
@@ -51,7 +52,7 @@ function HomeBanner() {
         <h5 id='text2'>we are here</h5>
         <p>Some representative placeholder content for the third slide.</p>
         <p>lorem</p>
-        <button id="button">Application Form</button>
+        <Link to='/virtualnin' id="button">Application Form</Link>
       </div>
         </Carousel.Item>
       </Carousel>

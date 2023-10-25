@@ -8,6 +8,8 @@ import Footer from "./component/Footer.js";
 import Contact from './component/Contact.js'
 import ContactBanner from "./component/ContactBanner.js";
 import HomeContent from "./component/HomeContent.js";
+import Vnin from "./component/Vnin.js";
+import Register from "./component/Register.js";
 
 
 function App() {
@@ -23,6 +25,11 @@ function App() {
         <Route path='/homecontent' element={<HomeContent/>}></Route>
         <Route path="/contact" element={<Contact />}></Route>
         <Route path="/about" element={<About />}></Route>
+        <Route path="/virtualnin" element= {<Vnin />}></Route>
+        <Route path="/register" element= {<Register />}></Route>
+
+        
+      
       </Routes>
     </Router>
   );

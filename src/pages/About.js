@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar'
-import AboutBanner from "./AboutBanner.js"
+import Navbar from '../component/Navbar'
+import AboutBanner from "../component/AboutBanner.js"
 import oga from '../images/oga.jpg'
 import '../App.css'
-import Footer from './Footer.js'
+import Footer from '../component/Footer.js'
 
 function About() {
   return (

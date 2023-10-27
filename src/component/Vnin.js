@@ -16,9 +16,9 @@ function Vnin() {
         </div>
     <div  class='col-md-6 mx-auto'>
     <form style={{height:'50vh'}} class="row  col-md-12 d-flex justify-content-center align-items-center mx-auto text-center">
-   <h1>Input your Virtual NIN</h1>
+   <h1 class="fw-bold">Input your Virtual NIN</h1>
   <div class="col-12 ">
-    <label for="inputPassword2" class="visually-hidden">Password</label>
+    {/* <label for="inputPassword2" class="visually-hidden">Password</label> */}
     <input type="text" class="form-control" id="vnin"  placeholder="Enter here.."/>
   </div>
  <div>
@@ -31,10 +31,7 @@ function Vnin() {
 </form>
     </div>
     </div>
-      
     </>
-    
-    
   )
 }
 

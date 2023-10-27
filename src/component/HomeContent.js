@@ -46,24 +46,24 @@ function HomeContent() {
         </div>
         <div id="funfacts" style={{margin:'4.5rem 0.5rem'}} class="row text-start align-items-center">
             <div id='aims' class="col-lg-6">
-                <h5 id='primary' class="fs-5 my-4 text-white">WASE STUDENT SCHOLARSHIP SCHEME</h5>
-                <h3 id='primary1' class="fs-5 my-4 text-white" >Aims and Objectives</h3>
-                <h3 id='primary2' class="fs-5 my-4 text-success" >Summary</h3>
+                <h5 id='primary' class="fs-5 my-1 text-white">WASE STUDENT SCHOLARSHIP SCHEME</h5>
+                <h3 id='primary1' class="fw-bolde text-white" >Aims and Objectives</h3>
+                <h3 id='summary' class="fw-bold mb-5" >Summary</h3>
                <p id='parag' class="fs-5 text-white">The aim of the "Wase Student Scholarship Scheme" is to provide financial assistance and support to deserving students, empowering them to pursue higher education and achieve their academic and career aspirations
                </p>
-               <p className='text-white'>
+               <p className='text-white fs-5'>
                We strive to foster educational excellence, create opportunities for personal growth, and contribute to the development of well-rounded individuals who will make a positive impact in their communities and beyond.
                </p>
-                <Link to="#" id='btn2' class="btn my-4 col-md-6">Go somewhere</Link>
+                <Link to="#" id='btn2' class="btn my-4 fs-4 col-md-6">Go somewhere</Link>
         
             </div>
             <div class="col-lg-6">
             <div class="container col-12 text-center">
   <div class="row row-cols-md-12">
-    <div id='counts' class="col-md-5 bg-dark p-5 m-1"><div>89</div><div className='text-white'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-1"><div>89</div><div className='text-white'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-1"><div>89</div><div className='text-white'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-1"><div>89</div><div className='text-white'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>
   </div>
 </div>
   </div>

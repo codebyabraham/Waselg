@@ -1,7 +1,7 @@
 import React from 'react'
-import ContactBanner from './ContactBanner.js'
-import Navbar from './Navbar'
-import Footer from './Footer'
+import ContactBanner from '../component/ContactBanner.js'
+import Navbar from '../component/Navbar.js'
+import Footer from '../component/Footer.js'
 import '../App.css'
 
 

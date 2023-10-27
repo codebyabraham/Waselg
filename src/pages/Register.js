@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Navbar from './Navbar'
+import Navbar from '../component/Navbar'
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-import AboutBanner from "./AboutBanner.js"
-import Footer from './Footer'
+import AboutBanner from "../component/AboutBanner.js"
+import Footer from '../component/Footer'
 
 
 

@@ -1,15 +1,15 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutBanner from "./component/AboutBanner.js";
-import About from "./component/About.js";
+import About from "./pages/About.js";
 import HomeBanner from "./component/HomeBanner.js";
-import Home from "./component/Home.js";
+import Home from "./pages/Home.js";
 import Navbar from "./component/Navbar.js";
 import Footer from "./component/Footer.js";
-import Contact from './component/Contact.js'
+import Contact from './pages/Contact.js'
 import ContactBanner from "./component/ContactBanner.js";
 import HomeContent from "./component/HomeContent.js";
 import Vnin from "./component/Vnin.js";
-import Register from "./component/Register.js";
+import Register from "./pages/Register.js";
 
 
 function App() {

@@ -1,6 +1,6 @@
 #funfacts{
     background-image: url(./images/fun-facts-bg.jpg);
-    /* padding: 5rem; */
+    padding: 6rem;
 }
 #text-content{
     position: absolute;
@@ -90,4 +90,11 @@
 .bg-secondary{
 margin-top: 300px;
 
+}
+#summary{
+    color:#6acf06;
+    font-size: 3.5rem;
+}
+#primary1{
+    font-size: 3.5rem;
 }

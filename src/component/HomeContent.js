@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import {Link} from 'react-router-dom'
 import '../App.css'
 import service_01 from '../images/service_01.jpg';
@@ -7,6 +7,21 @@ import service_03 from '../images/service_03.jpg';
 import zumarock from '../images/more-info.jpg'
 
 function HomeContent() {
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (count < 89) {
+        setCount(prevCount => prevCount + 1);
+      } else {
+        clearInterval(interval); // Stops the interval when count reaches 89
+      }
+    }, 20); 
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [count]);
+
   return (
     <>
     <div style={{margin:'4.5rem 0.5rem'}} class="p-3 rounded-4 row justify-content-center text-start py-5 ">
@@ -60,7 +75,7 @@ function HomeContent() {
             <div class="col-lg-6">
             <div class="container col-12 text-center">
   <div class="row row-cols-md-12">
-    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">{count}</div><div className='text-white fs-4'>Application</div></div>
     <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>
     <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>
     <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4'>Application</div></div>

@@ -10,6 +10,7 @@ import ContactBanner from "./component/ContactBanner.js";
 import HomeContent from "./component/HomeContent.js";
 import Vnin from "./component/Vnin.js";
 import Register from "./pages/Register.js";
+import Payment from "./pages/Payment.js";
 
 
 function App() {
@@ -27,9 +28,7 @@ function App() {
         <Route path="/about" element={<About />}></Route>
         <Route path="/virtualnin" element= {<Vnin />}></Route>
         <Route path="/register" element= {<Register />}></Route>
-
-        
-      
+        <Route path="/payment" element={<Payment />}></Route>
       </Routes>
     </Router>
   );

@@ -33,7 +33,7 @@ function Navbar() {
      
       <nav class="navbar navbar-expand-lg p-0 mb-5 fixed-top">
         <div class="container mx-auto">
-          <Link class="navbar-brand text-white" to="/">
+          <Link class="navbar-brand text-white fs-3 fw-bolder" to="/">
           {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
           WASE STUDENT SCHOLARSHIP SCHEME
           </Link>
@@ -72,7 +72,7 @@ function Navbar() {
                   <Link
                     type="button"
                     id="bttt"
-                    class="nav-link text-white"
+                    class="nav-link text-white fs-3"
                     aria-current="page"
                     to="/"
                   >
@@ -83,7 +83,7 @@ function Navbar() {
                 <li class="nav-item m-3">
                   <Link
                   id="bttt"
-                    class="nav-link text-white"
+                    class="nav-link fs-3 text-white"
                     to="/contact"
                     role="button"
                   >
@@ -93,7 +93,7 @@ function Navbar() {
                 <li class="nav-item m-3">
                   <Link
                   id="bttt"
-                    class="nav-link text-white"
+                    class="nav-link fs-3 text-white"
                     to="/about"
                     role="button"
                   >

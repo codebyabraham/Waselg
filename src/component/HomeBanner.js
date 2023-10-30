@@ -15,9 +15,8 @@ function HomeBanner() {
         <div id="text-content" class="carousel-caption align-items-center text-start d-md-block">
         <h3 id='text1'>we're ready to empower you</h3>
         <h5 id='text2'>we are here</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-        <p>lorem</p>
-        <Link to='/virtualnin' id="button">Application Form</Link>
+        <p class='fs-3'>Some representative placeholder content for the third slide. <br/>lorem.</p>
+        <Link to='/virtualnin' id="button" class='rounded-pill'>Application Form</Link>
       </div>
           <img
             className="d-block w-100 custom-carousel-image"
@@ -31,9 +30,8 @@ function HomeBanner() {
         <h3 id='text1'>we're here to unlock it</h3>
         <h5 id='text2'>we are here</h5>
 
-        <p>Some representative placeholder content for the third slide.</p>
-        <p>lorem</p>
-        <Link to='/virtualnin' id="button">Application Form</Link>
+        <p class='fs-3'>Some representative placeholder content for the third slide. <br/>lorem.</p>
+        <Link to='/virtualnin' id="button" class='rounded-pill'>Application Form</Link>
       </div>
           <img
             className="d-block w-100 custom-carousel-image"
@@ -50,9 +48,8 @@ function HomeBanner() {
            <div id="text-content" class="carousel-caption align-items-center text-start d-md-block">
            <h3 id='text1'>we are igniting change</h3>
         <h5 id='text2'>we are here</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-        <p>lorem</p>
-        <Link to='/virtualnin' id="button">Application Form</Link>
+        <p class='fs-3'>Some representative placeholder content for the third slide. <br/>lorem.</p>
+        <Link to='/virtualnin' id="button" class='rounded-pill'>Application Form</Link>
       </div>
         </Carousel.Item>
       </Carousel>

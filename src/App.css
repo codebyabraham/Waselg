@@ -6,6 +6,13 @@
     position: absolute;
     top: 250px;
 }
+#bttt:hover{
+    border-bottom: #6acf06 1px solid;
+    color: #6acf06;
+}
+#bttt{
+    color: white;
+}
 #button{
     background-color:green;
     color: #fff;

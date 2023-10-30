@@ -63,19 +63,19 @@ function Register() {
     <Navbar />
     <AboutBanner />
     <div className="row my-5">
-      <h1 class="text-center fs-4 text-success text-decoration-underline mb-4">APPLICATION FORM</h1>
-      <div className="container col-md-5">
+      <h1 style={{borderBottom:'1px solid green'}} class="text-center container mx-auto fs-3 fw-bolder text-success pb-3 mb-4">APPLICATION FORM</h1>
+      <div className="container col-md-5 p-5 bg-secondary fs-3">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ipsam aliquid beatae perferendis, officia doloribus laudantium sed, nisi vero dignissimos iste ex vitae voluptatum temporibus a eaque. Quis, accusantium rerum.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae deleniti hic, incidunt amet quisquam architecto dicta veniam tempore sunt quos omnis, suscipit placeat mollitia nisi neque rerum praesentium molestiae animi?
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam aut, quia fuga, ea eos neque sit ducimus accusamus nostrum nihil earum veniam error. Ea nihil mollitia vero, non quia voluptatibus?
       </div>
-        <div className="container text-start col-md-5">
+        <div className="container p-5 text-start col-md-6">
           <form>
-            <p class="mb-0">
+            <label class="mb-0 fw-bold fs-5">
               District<span className="form-box-asterix">*</span>
-            </p>
+            </label>
             <div class='col-12 my-2'>
-              <select class="form-select form-select-sm mb-3" 
+              <select class="form-select px-3 py-2 fs-5 rounded-pill shadow mb-4 form-select-sm" 
                 onChange={changeSelectOptionHandler}
               >
                 <option>Choose...</option>
@@ -89,10 +89,10 @@ function Register() {
     
 
             <div>
-              <label class="mb-0">
+              <label class="mb-0 fs-5 fw-bold">
                 Wards<span className="form-box-asterix">*</span>
               </label>
-              <select class="form-select form-select-sm mb-3">
+              <select class="form-select form-select-sm px-3 py-2 fs-5 rounded-pill shadow mb-4">
                 {
                   /** This is where we have used our options variable */
                   options
@@ -100,51 +100,50 @@ function Register() {
               </select>
             </div>
             <div>
-            <label class="form-label mb-0" for="formGroupFamilyInput">
+            <label class="form-label mb-0 fs-5 fw-bold" for="formGroupFamilyInput">
               Family Head Name
               <span className="form-box-asterix">*</span>
             </label>
-
             </div>
             <input
-              className="form-control mb-3"
+              className="form-control px-3 py-2 fs-5 rounded-pill shadow mb-4"
               type="text"
               value={Family}
               onChange={(e) => setFamily(e.target.value)}
               required
             />
 
-            <label class="form-label mb-0">
+            <label class="form-label mb-0 fw-bold fs-5">
               Address Line 1<span className="form-box-asterix">*</span>
             </label>
             <input
-              className="form-control mb-3"
+              className="form-control px-3 py-2 fs-5 rounded-pill shadow mb-4"
               type="text"
               value={Address1}
               onChange={(e) => setAddress1(e.target.value)}
               required
             />
-            <label class="form-label mb-0">
+            <label class="form-label mb-0 fs-5 fw-bold">
               Address line 2<span className="form-box-asterix">*</span>
             </label>
             <input
-              className="form-control mb-3"
+              className="form-control px-3 py-2 fs-5 rounded-pill shadow mb-4"
               type="text"
               value={Address2}
               onChange={(e) => setAddress2(e.target.value)}
               required
             />
-            <label class="form-label mb-0">
+            <label class="form-label mb-0 fs-5 fw-bold">
               Landmark<span className="form-box-asterix">*</span>
             </label>
             <input
-              className="form-control mb-3"
+              className="form-control px-3 py-2 fs-5 rounded-pill shadow mb-4"
               type="text"
               value={Landmark}
               onChange={(e) => setLandmark(e.target.value)}
               required
             />
-            <Link class="btn btn-success" type="submit">Continue</Link>
+            <Link to='/payment' class="btn btn-success rounded-pill col-7 btn-md fs-4" type="submit">Continue</Link>
           </form>
         </div>
     </div>

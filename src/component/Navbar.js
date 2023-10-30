@@ -72,7 +72,7 @@ function Navbar() {
                   <Link
                     type="button"
                     id="bttt"
-                    class="nav-link text-white fs-3"
+                    class="nav-link fs-3"
                     aria-current="page"
                     to="/"
                   >
@@ -83,7 +83,7 @@ function Navbar() {
                 <li class="nav-item m-3">
                   <Link
                   id="bttt"
-                    class="nav-link fs-3 text-white"
+                    class="nav-link fs-3"
                     to="/contact"
                     role="button"
                   >
@@ -93,7 +93,7 @@ function Navbar() {
                 <li class="nav-item m-3">
                   <Link
                   id="bttt"
-                    class="nav-link fs-3 text-white"
+                    class="nav-link fs-3"
                     to="/about"
                     role="button"
                   >

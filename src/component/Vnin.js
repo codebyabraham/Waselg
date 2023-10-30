@@ -19,14 +19,14 @@ function Vnin() {
    <h1 class="fw-bold">Input your Virtual NIN</h1>
   <div class="col-12 ">
     {/* <label for="inputPassword2" class="visually-hidden">Password</label> */}
-    <input type="text" class="form-control" id="vnin"  placeholder="Enter here.."/>
+    <input type="text" class="form-control px-3 py-2 fs-5 rounded-pill shadow" id="vnin"  placeholder="Enter here.."/>
   </div>
  <div>
   <img width="150" height="150" class="mx-auto d-block" src="https://img.icons8.com/metro/600/decision.png" alt="decision"/>
  </div>
   
   <div class="col-12 ">
-    <Link to='/register' type="submit" style={{backgroundColor:'#469c4b', color:'#ffff', borderRadius:'2rem'}} class="btn mb-3 px-5">Generate</Link>
+    <Link to='/register' type="submit" style={{backgroundColor:'#469c4b', color:'#ffff'}} class="btn rounded-pill btn-lg mb-3 px-5 col-6 text-center">Generate</Link>
   </div>
 </form>
     </div>

@@ -48,7 +48,6 @@ function Footer() {
       <div className="col-md-12 text-center" style={{ borderTop: '1px solid #ffff' }}>
         <p className="mb-0 pt-4 pb-5 fs-5">Wass.ng@2023</p>
       </div>
-    
   </div>
   </div>
     </>

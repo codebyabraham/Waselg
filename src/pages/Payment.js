@@ -1,7 +1,7 @@
 import React from "react";
 import { usePaystackPayment } from "react-paystack";
 import { Link } from "react-router-dom";
-import img from "../Assets/plateau.png";
+// import img from "../Assets/plateau.png";
 import { useNavigate } from "react-router-dom";
 
 function Payment() {
@@ -100,7 +100,7 @@ function Payment() {
         <section class="home section" id="home">
           <h1 style={{ textAlign: "center", fontSize: "40px" }}></h1>
           <div class="home__container container grid">
-            <img src={img} alt="" />
+            {/* <img src={img} alt="" /> */}
 
             <div class="home__data">
               <h1 class="home__title">Make Payment for your Certificate </h1>

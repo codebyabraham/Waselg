@@ -31,7 +31,7 @@ function Contact() {
                 <div id='review' class="col-lg-3 rounded shadow m-3">
                 <img className='m-3' width="50" height="50" src="https://img.icons8.com/ios-filled/50/02A12F/marker.png" alt="marker"/>
                     <div class="h4 text-black">Location</div>
-                    <div class="text-muted mb-3">Along Emir Street Opp. Unity Bank PLC</div>
+                    <div class="text-muted mb-3">Wase Local Government Secretariat</div>
              
                     <p id='info' class="mt-3 ">View on Goggle Maps</p>
                 </div>

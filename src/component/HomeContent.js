@@ -27,14 +27,14 @@ function HomeContent() {
     <div style={{margin:'4.5rem 0.5rem'}} class="p-3 rounded-4 row justify-content-center text-start py-5 ">
         <div class="col-md-12">
             <h2 class="mb-4 mx-auto fs-1 fw-bolder text-center col-md-6 pb-2">WASSS & <span style={{color:'#6acf06'}}>YOU</span></h2>
-            <p className='text-center fs-4 fw-bold'>AT THE HEART OF OUR SCHOLARSHIP SCHEME IS THE BELIEF THAT EDUCATION IS A POWERFUL TOOL FOR PERSONAL AND SOCIETAL GROWTH</p>
+            <p className='text-center fs-4 fw-bold'>Unlock Your Heritage: Your Indigenous Certificate Awaits!</p>
             <div class="row justify-content-center">
                 <div id='review' class="col-lg-3 rounded shadow m-3 p-4">
                    
                 <img src={service_01}class="card-img-top" alt="..."/>
   <div class="card-body fs-4">
-    <h5 class="card-title my-2 fs-3 fw-bold" >Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <h5 class="card-title my-2 fs-3 fw-bold" >Easy Application</h5>
+    <p class="card-text">Our user-friendly platform simplifies the indigenous certificate application process. Say goodbye to paperwork and long queues. Apply from the comfort of your home, and get started on your cultural heritage journey with just a few clicks.</p>
     <Link to="#" id='btn2' class="btn rounded-pill">Go somewhere</Link>
   </div>
                 </div>
@@ -42,8 +42,8 @@ function HomeContent() {
                    
                    <img src={service_02}class="card-img-top" alt="..."/>
      <div class="card-body fs-4">
-       <h5 class="card-title my-2 fs-3 fw-bold">Card title</h5>
-       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <h5 class="card-title my-2 fs-3 fw-bold">Dedicated Assistance</h5>
+       <p class="card-text">Our support team is here for you every step of the way. Have questions or need guidance? We're just an email, chat, or phone call away. Count on our experts to ensure a smooth application experience.</p>
        <Link to="#" id='btn2' class="btn rounded-pill">Go somewhere</Link>
      </div>
                    </div>
@@ -51,8 +51,8 @@ function HomeContent() {
                    
                    <img src={service_03}class="card-img-top" alt="..."/>
      <div class="card-body fs-4">
-       <h5 class="card-title my-2 fs-3 fw-bold">Card title</h5>
-       <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+       <h5 class="card-title my-2 fs-3 fw-bold">Clear Fee Structure</h5>
+       <p class="card-text">No hidden costs or surprises! Our transparent fee structure ensures you know exactly what you're paying for. Affordable pricing makes obtaining your indigenous certificate accessible to everyone.</p>
        <Link href="#" id='btn2' class="btn rounded-pill">Go somewhere</Link>
      </div>
                    </div>

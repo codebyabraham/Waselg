@@ -64,10 +64,10 @@ function HomeContent() {
                 <h5 id='primary' class="fs-5 my-1 text-white">WASE STUDENT SCHOLARSHIP SCHEME</h5>
                 <h3 id='primary1' class="fw-bolder text-white" >Aims and Objectives</h3>
                 <h3 id='summary' class="fw-bold mb-5" >Summary</h3>
-               <p id='parag' class="fs-5 text-white">The aim of the "Wase Student Scholarship Scheme" is to provide financial assistance and support to deserving students, empowering them to pursue higher education and achieve their academic and career aspirations
+               <p id='parag' class="fs-5 text-white">Our primary aim is to simplify and expedite the process of obtaining an indigenous certificate. We aim to eliminate unnecessary bureaucratic hurdles and reduce the time and effort required to complete the application.
                </p>
                <p className='text-white fs-5'>
-               We strive to foster educational excellence, create opportunities for personal growth, and contribute to the development of well-rounded individuals who will make a positive impact in their communities and beyond.
+               We aim to promote and preserve the cultural heritage of indigenous communities by facilitating the issuance of indigenous certificates. This, in turn, helps individuals and communities maintain a strong connection to their roots and traditions.
                </p>
                 <Link to="#" id='btn2' class="btn my-4 fs-4 col-md-6 rounded-pill">Go somewhere</Link>
         
@@ -76,9 +76,9 @@ function HomeContent() {
             <div class="container col-12 text-center">
   <div class="row row-cols-md-12">
     <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">{count}</div><div className='text-white fs-4 fw-bold'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4 fw-bold'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4 fw-bold'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">89</div><div className='text-white fs-4 fw-bold'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">58</div><div className='text-white fs-4 fw-bold'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">45</div><div className='text-white fs-4 fw-bold'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">76</div><div className='text-white fs-4 fw-bold'>Application</div></div>
   </div>
 </div>
   </div>

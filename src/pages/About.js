@@ -15,10 +15,10 @@ function About() {
       <div style={{margin:'4.5rem 0rem '}} class="p-3 col-10 row mx-auto text-start align-items-center">
             <div class="col-lg-5">
               <h4 id='primary1' class="fs-6 my-3 text-dark">SHAPING A BRIGHT FUTURE.</h4>
-                <h1 id='primary' class="fs-3 my-4 mt-2 ">Wase Student Scholarship Scheme (WASSS)</h1>
-               <p id='parag' >Welcome to the "Wase Student Scholarship Scheme (WASSS)"! We are dedicated to empowering students and supporting their educational aspirations through our scholarship program. Our mission is to provide financial assistance and opportunities to deserving students, enabling them to achieve their academic goals and unlock their full potential.</p>
+                <h1 id='primary' class="fs-3 my-4 mt-2 ">CERTIFICATE OF INDIGENESHIP</h1>
+               <p id='parag' >Our Local government is our identity; it forms the singular basis for the Federal Character principle and its application in Nigeria. In essence, it is the remarkable instrument that unifies and determines true Federalism in the country.</p>
 
-<p>At the heart of our scholarship scheme is the belief that education is a powerful tool for personal and societal growth. We understand that many students face financial barriers that can hinder their educational pursuits, and we are committed to bridging that gap by offering scholarships to eligible individuals indigine of Wase Local Goverment.</p>
+<p>This platform targets at providing a means of indigenes of local governments desirous of authenticating their Origin to do so online, allowing the local Governments control of the instrument and giving institutions requiring them an opportunity to verify the authenticity and identity behind the document.</p>
 <p>We are proud to be associated with the regime of His Excellency Governor Caleb Manasseh Mutfwang, a renowned Human Being committed to promoting excellence in education and humanity at large. With our scholarship program, we aim to foster a culture of meritocracy and empower students from diverse backgrounds to thrive academically.</p>
 
 

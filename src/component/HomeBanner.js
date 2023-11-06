@@ -13,9 +13,9 @@ function HomeBanner() {
       <Carousel className="custom-carousel">
         <Carousel.Item>
         <div id="text-content" class="carousel-caption align-items-center text-start d-md-block">
-        <h3 id='text1'>we're ready to empower you</h3>
+        <h3 id='text1'>Your Heritage, Your Identity</h3>
         <h5 id='text2'>we are here</h5>
-        <p class='fs-3'>Some representative placeholder content for the third slide. <br/>lorem.</p>
+        <p class='fs-3'>Our Identity is from the Local Government, Let Us document it</p>
         <Link to='/virtualnin' id="button" class='rounded-pill'>Application Form</Link>
       </div>
           <img
@@ -27,10 +27,10 @@ function HomeBanner() {
         </Carousel.Item>
         <Carousel.Item>
         <div id="text-content" class="carousel-caption align-items-center text-start d-md-block">
-        <h3 id='text1'>we're here to unlock it</h3>
+        <h3 id='text1'>Your Heritage, Your Identity</h3>
         <h5 id='text2'>we are here</h5>
 
-        <p class='fs-3'>Some representative placeholder content for the third slide. <br/>lorem.</p>
+        <p class='fs-3'>Our Greatness as a Nation starts from the Local Governments.</p>
         <Link to='/virtualnin' id="button" class='rounded-pill'>Application Form</Link>
       </div>
           <img
@@ -46,9 +46,9 @@ function HomeBanner() {
             alt="Third slide"
           />
            <div id="text-content" class="carousel-caption align-items-center text-start d-md-block">
-           <h3 id='text1'>we are igniting change</h3>
+           <h3 id='text1'>Your Heritage, Your Identity</h3>
         <h5 id='text2'>we are here</h5>
-        <p class='fs-3'>Some representative placeholder content for the third slide. <br/>lorem.</p>
+        <p class='fs-3'>Local Governments, the building block of the Nation.</p>
         <Link to='/virtualnin' id="button" class='rounded-pill'>Application Form</Link>
       </div>
         </Carousel.Item>

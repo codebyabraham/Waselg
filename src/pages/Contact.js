@@ -44,7 +44,7 @@ function Contact() {
 <p class='text-center fw-bold text-muted '>THIS IS ANOTHER OPTION YOU CAN USE TO CANTACT USS</p>
   <div class="col-md-4">
     <label for="inputText4" class="form-label"></label>
-    <input type="text" class="form-control" placeholder='Full Name' name="" id="" />
+    <input type="text" cla ss="form-control" placeholder='Full Name' name="" id="" />
   </div>
   <div class="col-md-4">
     <label for="inputPassword4" class="form-label"></label>

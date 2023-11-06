@@ -61,7 +61,7 @@ function HomeContent() {
         </div>
         <div id="funfacts" style={{margin:'4.5rem 0.5rem'}} class="row text-start align-items-center">
             <div id='aims' class="col-lg-6">
-                <h5 id='primary' class="fs-5 my-1 text-white">WASE STUDENT SCHOLARSHIP SCHEME</h5>
+                <h5 id='primary' class="fs-5 my-1 text-white">WASE CERTIFICATE OF INDIGENESHIP</h5>
                 <h3 id='primary1' class="fw-bolder text-white" >Aims and Objectives</h3>
                 <h3 id='summary' class="fw-bold mb-5" >Summary</h3>
                <p id='parag' class="fs-5 text-white">Our primary aim is to simplify and expedite the process of obtaining an indigenous certificate. We aim to eliminate unnecessary bureaucratic hurdles and reduce the time and effort required to complete the application.
@@ -92,11 +92,11 @@ function HomeContent() {
     <div id='card-section' class="col-md-6 p-5">
       <div>
         <p class="fs-5">
-        A LETTER TO WASE STUDENT (BROTHERS / SISTERS)
+        Administratively, Wase is divided into four districts, namely: Wase, Bashar, Lamba, and Kadarko.
         </p>
-        <h5 class="card-title mb-4 fs-2 fw-bolder">My Dear <span class="text-success">One</span> </h5>
-        <p class="card-text fs-5">"Believe in your potential, embrace the power of education, and let your dreams ignite the path to success. Dare to dream, persevere through challenges, and unlock your limitless potential. Your journey begins now, and we are here to champion your success every step of the way. Together, let's write a story of determination, resilience, and achievement. The world is waiting for your brilliance to shine. Apply for the "Wase Student Scholarship Scheme" and let your dreams take flight!"</p>
-        <p class="card-text fs-5">Thank you</p>
+        <h5 class="card-title mb-4 fs-2 fw-bolder">Wase <span class="text-success">Town</span> </h5>
+        <p class="card-text fs-5">"Wase is a town and Local Government Area (LGA) of Plateau State, Nigeria, situated some 216 km south east of Jos, the Plateau State capital. It shares its name with the nearby Wase River. "</p>
+        {/* <p class="card-text fs-5">Thank you</p> */}
       </div>
     </div>
   </div>

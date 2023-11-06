@@ -35,7 +35,7 @@ function Navbar() {
         <div class="container mx-auto">
           <Link class="navbar-brand text-white fs-3 fw-bolder" to="/">
           {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
-          WASE STUDENT SCHOLARSHIP SCHEME
+          CERTIFICATE OF INDIGENESHIP
           </Link>
 
           <button style={{border: '1px white solid'}}

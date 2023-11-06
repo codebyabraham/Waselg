@@ -14,11 +14,11 @@ function About() {
       <AboutBanner />
       <div style={{margin:'4.5rem 0rem '}} class="p-3 col-10 row mx-auto text-start align-items-center">
             <div class="col-lg-5">
-              <h4 id='primary1' class="fs-6 my-3 text-dark">SHAPING A BRIGHT FUTURE.</h4>
-                <h1 id='primary' class="fs-3 my-4 mt-2 ">Wase Student Scholarship Scheme (WASSS)</h1>
-               <p id='parag' >Welcome to the "Wase Student Scholarship Scheme (WASSS)"! We are dedicated to empowering students and supporting their educational aspirations through our scholarship program. Our mission is to provide financial assistance and opportunities to deserving students, enabling them to achieve their academic goals and unlock their full potential.</p>
+              {/* <h4 id='primary1' class="fs-6 my-3 text-dark">SHAPING A BRIGHT FUTURE.</h4> */}
+                <h1 id='primary' class="fs-3 my-4 mt-2 ">CERTIFICATE OF INDIGENESHIP</h1>
+               <p id='parag' >Our Local government is our identity; it forms the singular basis for the Federal Character principle and its application in Nigeria. In essence, it is the remarkable instrument that unifies and determines true Federalism in the country.</p>
 
-<p>At the heart of our scholarship scheme is the belief that education is a powerful tool for personal and societal growth. We understand that many students face financial barriers that can hinder their educational pursuits, and we are committed to bridging that gap by offering scholarships to eligible individuals indigine of Wase Local Goverment.</p>
+<p>This platform targets at providing a means of indigenes of local governments desirous of authenticating their Origin to do so online, allowing the local Governments control of the instrument and giving institutions requiring them an opportunity to verify the authenticity and identity behind the document.</p>
 <p>We are proud to be associated with the regime of His Excellency Governor Caleb Manasseh Mutfwang, a renowned Human Being committed to promoting excellence in education and humanity at large. With our scholarship program, we aim to foster a culture of meritocracy and empower students from diverse backgrounds to thrive academically.</p>
 
 
@@ -31,7 +31,7 @@ function About() {
   <img src={oga} class="card-img-top" alt="..."/>
   <div class="card-body">
     {/* <h5 class="card-title">Card title</h5> */}
-    <p class="card-text">We invite you to explore our website and learn more about the eligibility criteria, application process, and benefits of our scholarship program. Whether you are a prospective applicant, a dedicated supporter, or a potential partner, we welcome your involvement and collaboration. Together, we can empower talented individuals to shape a brighter future.</p>
+    {/* <p class="card-text">We invite you to explore our website and learn more about the eligibility criteria, application process, and benefits of our scholarship program. Whether you are a prospective applicant, a dedicated supporter, or a potential partner, we welcome your involvement and collaboration. Together, we can empower talented individuals to shape a brighter future.</p> */}
    
   </div>
 
@@ -70,13 +70,13 @@ function About() {
 
                 <div id="funfacts" style={{margin:'0rem 0rem'}} class="row text-start align-items-center">
             <div id='aims' class="col-lg-6">
-                <h5 id='primary' class="fs-6 my-4 text-white">WASE STUDENT SCHOLARSHIP SCHEME</h5>
+                <h5 id='primary' class="fs-6 my-4 text-white">CERTIFICATE OF INDIGENESHIP</h5>
                 <h3 id='primary1' class="fs-3 my-4 text-white" >Aims and Objectives</h3>
                 <h3 id='primary2' class="fs-5 my-4 text-success" >Summary</h3>
-               <p id='parag' class="fs-5 text-white">The aim of the "Wase Student Scholarship Scheme" is to provide financial assistance and support to deserving students, empowering them to pursue higher education and achieve their academic and career aspirations
+               <p id='parag' class="fs-5 text-white">Our primary aim is to simplify and expedite the process of obtaining an indigenous certificate. We aim to eliminate unnecessary bureaucratic hurdles and reduce the time and effort required to complete the application.
                </p>
                <p className='text-white'>
-               We strive to foster educational excellence, create opportunities for personal growth, and contribute to the development of well-rounded individuals who will make a positive impact in their communities and beyond.
+               We aim to promote and preserve the cultural heritage of indigenous communities by facilitating the issuance of indigenous certificates. This, in turn, helps individuals and communities maintain a strong connection to their roots and traditions.
                </p>
                 <Link to="#" id='btn2' class="btn my-4 col-md-6">Go somewhere</Link>
         

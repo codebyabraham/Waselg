@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // import img from "../Assets/plateau.png";
 import { useNavigate } from "react-router-dom";
 
+
 function Payment() {
   const config = {
     reference: new Date().getTime().toString(),

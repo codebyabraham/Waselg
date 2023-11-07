@@ -22,6 +22,35 @@ function HomeContent() {
     };
   }, [count]);
 
+  const [count2, setCount2] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (count2 < 58) {
+        setCount2(prevCount => prevCount + 1);
+      } else {
+        clearInterval(interval); // Stops the interval when count reaches 89
+      }
+    }, 20); 
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [count2]);
+
+  const [count3, setCount3] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (count3 < 45) {
+        setCount3(prevCount => prevCount + 1);
+      } else {
+        clearInterval(interval); // Stops the interval when count reaches 89
+      }
+    }, 20); 
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [count3]);
   return (
     <>
     <div style={{margin:'4.5rem 0.5rem'}} class="p-3 rounded-4 row justify-content-center text-start py-5 ">
@@ -35,7 +64,7 @@ function HomeContent() {
   <div class="card-body fs-4">
     <h5 class="card-title my-2 fs-3 fw-bold" >Easy Application</h5>
     <p class="card-text">Our user-friendly platform simplifies the indigenous certificate application process. Say goodbye to paperwork and long queues. Apply from the comfort of your home, and get started on your cultural heritage journey with just a few clicks.</p>
-    <Link to="#" id='btn2' class="btn rounded-pill">Go somewhere</Link>
+    {/* <Link to="#" id='btn2' class="btn rounded-pill">Go somewhere</Link> */}
   </div>
                 </div>
                 <div id='review' class="col-lg-3 rounded shadow m-3 p-4">
@@ -44,7 +73,7 @@ function HomeContent() {
      <div class="card-body fs-4">
        <h5 class="card-title my-2 fs-3 fw-bold">Dedicated Assistance</h5>
        <p class="card-text">Our support team is here for you every step of the way. Have questions or need guidance? We're just an email, chat, or phone call away. Count on our experts to ensure a smooth application experience.</p>
-       <Link to="#" id='btn2' class="btn rounded-pill">Go somewhere</Link>
+       {/* <Link to="#" id='btn2' class="btn rounded-pill">Go somewhere</Link> */}
      </div>
                    </div>
                    <div id='review' class="col-lg-3 rounded shadow m-3 p-4">
@@ -53,7 +82,7 @@ function HomeContent() {
      <div class="card-body fs-4">
        <h5 class="card-title my-2 fs-3 fw-bold">Clear Fee Structure</h5>
        <p class="card-text">No hidden costs or surprises! Our transparent fee structure ensures you know exactly what you're paying for. Affordable pricing makes obtaining your indigenous certificate accessible to everyone.</p>
-       <Link href="#" id='btn2' class="btn rounded-pill">Go somewhere</Link>
+       {/* <Link href="#" id='btn2' class="btn rounded-pill">Go somewhere</Link> */}
      </div>
                    </div>
             </div>
@@ -69,16 +98,16 @@ function HomeContent() {
                <p className='text-white fs-5'>
                We aim to promote and preserve the cultural heritage of indigenous communities by facilitating the issuance of indigenous certificates. This, in turn, helps individuals and communities maintain a strong connection to their roots and traditions.
                </p>
-                <Link to="#" id='btn2' class="btn my-4 fs-4 col-md-6 rounded-pill">Go somewhere</Link>
+                {/* <Link to="#" id='btn2' class="btn my-4 fs-4 col-md-6 rounded-pill">Go somewhere</Link> */}
         
             </div>
             <div class="col-lg-6">
             <div class="container col-12 text-center">
   <div class="row row-cols-md-12">
     <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">{count}</div><div className='text-white fs-4 fw-bold'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">58</div><div className='text-white fs-4 fw-bold'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">45</div><div className='text-white fs-4 fw-bold'>Application</div></div>
-    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">76</div><div className='text-white fs-4 fw-bold'>Application</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">{count2}</div><div className='text-white fs-4 fw-bold'>Process</div></div>
+    <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">{count3}</div><div className='text-white fs-4 fw-bold'>Awards</div></div>
+    {/* <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">76</div><div className='text-white fs-4 fw-bold'>Application</div></div> */}
   </div>
 </div>
   </div>

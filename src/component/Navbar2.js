@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 // import logo from './images/logo.png';
 import "../App.css";
 
-function Navbar() {
+function Navbar2() {
   const [lastScrollTop, setLastScrollTop] = useState(0);
 
   //handle scroll
@@ -28,23 +28,23 @@ function Navbar() {
 
   return (
     <>
-      <nav class="navbar navbar-dark navbar-expand-lg p-0 mb-5 fixed-top">
+      <nav class="navbar bg-dark navbar-expand-lg p-0 mb-5 ">
         <div class="container mx-auto">
-          <Link class="navbar-brand text-white fs-4 fw-bolder text-sm" to="/">
+          <Link class="navbar-brand text-white fs-5 fw-bolder" to="/">
             {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
             CERTIFICATE OF INDIGENESHIP
           </Link>
 
           <button
             style={{ border: "1px white solid" }}
-            className="navbar-toggler "
+            class="navbar-toggler bg-white"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon btn-outline-light"></span>
           </button>
 
           <div
@@ -107,4 +107,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default Navbar2;

@@ -1,31 +1,55 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "../component/Navbar";
 import { useNavigate } from "react-router-dom";
-import { Link } from "react-router-dom";
 import AboutBanner from "../component/AboutBanner.js";
 import Footer from "../component/Footer";
 import image from "../images/image.jpeg";
 import axios from "axios";
+import image2 from "../images/laoding.gif";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { v4 as uuidv4 } from "uuid";
 
 function Register() {
-  const [Selected, setSelected] = useState("");
-  const [responseData, setData] = useState("");
-  const navigate = useNavigate();
-  const [Application_nos, setApplicationNos] = useState(uuidv4());
-
   useEffect(() => {
-    // Generate a new application number when the component mounts
-    setApplicationNos(uuidv4());
+    document.title = "WaseLg | Register";
+  }, []);
+  const [Selected, setSelected] = useState("");
+  const navigate = useNavigate();
+  const [loading, setLoading] = useState(false);
+  // State to hold the generated application numbers
+  const [Application_nos, setApplicationNumbers] = useState(null);
+
+  // Function to generate a random integer between min (inclusive) and max (exclusive)
+  const getRandomInt = (min, max) =>
+    Math.floor(Math.random() * (max - min) + min);
+
+  // Effect to run once when the component mounts
+  useEffect(() => {
+    // Generate 6 random application numbers
+    const newApplicationNumber = getRandomInt(100000, 999999);
+
+    // Set the generated numbers in the state
+    setApplicationNumbers(newApplicationNumber);
   }, []);
 
-  const storedData = localStorage.getItem("Data");
-  // Parse the JSON string back to an object after retrieving
-  const data1 = JSON.parse(storedData);
-  const Imagedata = data1.imageData;
-  const Names = data1.name;
+  let Imagedata, Names, storedData; // Declare the variables outside the try-catch block
+
+  try {
+    const storedData = localStorage.getItem("Data");
+
+    if (storedData) {
+      const data1 = JSON.parse(storedData);
+      Imagedata = data1.imageData;
+      Names = data1.name;
+      // Continue using Imagedata and Names as needed
+    } else {
+      console.error("No data stored");
+      // Handle the case where no data is found
+    }
+  } catch (error) {
+    console.error("Error parsing JSON:", error);
+    // Handle the parsing error as needed
+  }
 
   const changeSelectOptionHandler = (event) => {
     setSelected(event.target.value);
@@ -77,68 +101,82 @@ function Register() {
     Application_nos,
   };
 
-  console.log(data);
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    axios.post("http://localhost:8000/api/fetchdata", data).then((res) => {
-      setData(res.data);
-    });
-    switch (responseData) {
-      case "":
-        toast("vNIN unverify", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-        navigate("/Virtualnin");
-      case undefined:
-        toast("vNIN unverify", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-        navigate("/Virtualnin");
-      case null:
-        toast("vNIN unverify", {
-          position: "top-right",
-          autoClose: 5000,
-          hideProgressBar: false,
-          closeOnClick: true,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-        });
-        navigate("/Virtualnin");
-        break;
-      default:
-        toast("VNIN verified");
-        break;
+    setLoading(true);
+
+    try {
+      const response = await axios.post(
+        "https://nimc-backend.onrender.com/api/adddata",
+        data
+      );
+      const responseDataFromApi = response.data.message;
+      switch (responseDataFromApi) {
+        case "":
+          toast("Kindly attempt to submit again.", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+          navigate("/register");
+          break;
+        case undefined:
+          toast("Kindly attempt to submit again.", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+          navigate("/register");
+          break;
+        case null:
+          toast("Kindly attempt to submit again.", {
+            position: "top-right",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+          navigate("/register");
+          break;
+        default:
+          toast("Registered successfull");
+          navigate("/success");
+          break;
+      }
+      setLoading(false);
+    } catch (error) {
+      // Handle the error as needed
+      setLoading(false);
     }
   };
-  useEffect(() => {
-    // Redirect back to navigate page if transactionId is empty string
-    if (Names === "") {
-      navigate("/payment"); // Replace "/navigate" with the actual URL of your navigate page
-    }
-  }, []);
 
   return (
     <>
       <ToastContainer />
       <Navbar />
       <AboutBanner />
+      {loading && (
+        <div className="overlay">
+          <img
+            src={image2} // Replace with the path to your loading GIF
+            alt="Loading"
+          />
+          <h4>Generating...</h4>
+        </div>
+      )}{" "}
       <div className="row my-5">
         <h1
           style={{ borderBottom: "1px solid green" }}
@@ -148,10 +186,13 @@ function Register() {
         </h1>
         <div className="container col-md-5 p-5 bg-secondary fs-3">
           <p>Name: {Names}</p>
+
           {storedData ? (
-            <img src={Imagedata} alt="image" style={{ width: "100%" }} />
+            // eslint-disable-next-line no-unused-vars
+            <img src={Imagedata} alt="img" style={{ width: "100%" }} />
           ) : (
-            <img src={image} alt="image" style={{ width: "100%" }} />
+            // eslint-disable-next-line no-unused-vars
+            <img src={image} alt="img" style={{ width: "100%" }} />
           )}
         </div>
         <div className="container p-5 text-start col-md-6">
@@ -240,13 +281,11 @@ function Register() {
               onChange={(e) => setEmail(e.target.value)}
               required
             />
-            <Link
-              to="/payment"
-              class="btn btn-success rounded-pill col-7 btn-md fs-4"
+            <input
+              className="btn btn-success rounded-pill col-7 btn-md fs-4"
               type="submit"
-            >
-              Continue
-            </Link>
+              value="Continue"
+            />
           </form>
         </div>
       </div>

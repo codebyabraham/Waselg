@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { usePaystackPayment } from "react-paystack";
-import { Link } from "react-router-dom";
 import "./payment.css";
 // import img from "../Assets/plateau.png";
 import { useNavigate } from "react-router-dom";
@@ -9,6 +8,9 @@ import Footer from "../component/Footer";
 import Navbar2 from "../component/Navbar2";
 
 function Payment() {
+  useEffect(() => {
+    document.title = "WaseLg | Payment";
+  }, []);
   const [email, setEmail] = useState("");
 
   const handleEmailChange = (e) => {

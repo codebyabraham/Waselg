@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
 import Navbar from "../component/Navbar";
 import AboutBanner from "../component/AboutBanner.js";
 import oga from "../images/oga.jpg";
@@ -7,6 +6,53 @@ import "../App.css";
 import Footer from "../component/Footer.js";
 
 function About() {
+  useEffect(() => {
+    document.title = "WaseLg | About";
+  }, []);
+  const [count, setCount] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (count < 89) {
+        setCount((prevCount) => prevCount + 1);
+      } else {
+        clearInterval(interval); // Stops the interval when count reaches 89
+      }
+    }, 20);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [count]);
+
+  const [count2, setCount2] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (count2 < 58) {
+        setCount2((prevCount) => prevCount + 1);
+      } else {
+        clearInterval(interval); // Stops the interval when count reaches 89
+      }
+    }, 20);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [count2]);
+
+  const [count3, setCount3] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (count3 < 45) {
+        setCount3((prevCount) => prevCount + 1);
+      } else {
+        clearInterval(interval); // Stops the interval when count reaches 89
+      }
+    }, 20);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [count3]);
   return (
     <>
       <Navbar />
@@ -123,22 +169,19 @@ function About() {
         <div class="col-lg-6">
           <div class="container col-12 text-center">
             <div class="row row-cols-md-12">
-              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
-                <div>89</div>
-                <div className="text-white">Application</div>
+              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+                <div class="fs-1 fw-bolder">{count}</div>
+                <div className="text-white fs-4 fw-bold">Application</div>
               </div>
-              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
-                <div>89</div>
-                <div className="text-white">Application</div>
+              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+                <div class="fs-1 fw-bolder">{count2}</div>
+                <div className="text-white fs-4 fw-bold">Process</div>
               </div>
-              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
-                <div>89</div>
-                <div className="text-white">Application</div>
+              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+                <div class="fs-1 fw-bolder">{count3}</div>
+                <div className="text-white fs-4 fw-bold">Awards</div>
               </div>
-              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
-                <div>89</div>
-                <div className="text-white">Application</div>
-              </div>
+              {/* <div id='counts' class="col-md-5 bg-dark p-5 m-2"><div class="fs-1 fw-bolder">76</div><div className='text-white fs-4 fw-bold'>Application</div></div> */}
             </div>
           </div>
         </div>

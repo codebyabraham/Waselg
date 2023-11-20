@@ -52,7 +52,7 @@ function Payment() {
     return (
       <div>
         <button
-          className="button bg-success"
+          className="button bg-success col-md-6"
           onClick={() => {
             initializePayment(onSuccess, onClose);
           }}
@@ -68,10 +68,11 @@ function Payment() {
     <div className="payment">
       <Navbar2 />
 
-      <div className="payment-container">
+      <div className="payment-container my-5 mx-2 p-3">
         <h1>Payment for Certificate of Indegene</h1>
         <form onSubmit={handleSubmit}>
-          <input
+          <input 
+            class='my-5'
             type="email"
             id="email"
             placeholder="Enter your email"

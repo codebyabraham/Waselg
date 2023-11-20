@@ -28,7 +28,7 @@ function Navbar2() {
 
   return (
     <>
-      <nav class="navbar bg-dark navbar-expand-lg p-0 mb-5 ">
+      <nav style={{backgroundColor:'rgba(10,150,10,0.8603816526610644)'}} class="navbar navbar-expand-lg p-2 mb-5 ">
         <div class="container mx-auto">
           <Link class="navbar-brand text-white fs-5 fw-bolder" to="/">
             {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
@@ -36,7 +36,7 @@ function Navbar2() {
           </Link>
 
           <button
-            style={{ border: "1px white solid" }}
+            
             class="navbar-toggler bg-white"
             type="button"
             data-bs-toggle="offcanvas"
@@ -44,7 +44,7 @@ function Navbar2() {
             aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon btn-outline-light"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
 
           <div
@@ -59,7 +59,7 @@ function Navbar2() {
               </Link>
               <button
                 type="button"
-                class="btn-close btn-close-white"
+                class="btn-close btn-close-success"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>

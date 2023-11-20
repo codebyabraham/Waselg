@@ -28,10 +28,9 @@ function Navbar() {
 
   return (
     <>
-      <nav class="navbar navbar-dark navbar-expand-lg p-0 mb-5 fixed-top">
+      <nav class="navbar navbar-dark navbar-expand-lg py-2 mb-5 fixed-top">
         <div class="container mx-auto">
           <Link class="navbar-brand text-white fs-4 fw-bolder text-sm" to="/">
-            {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
             CERTIFICATE OF INDIGENESHIP
           </Link>
 
@@ -59,7 +58,7 @@ function Navbar() {
               </Link>
               <button
                 type="button"
-                class="btn-close btn-close-white"
+                class="btn-close btn-close-success"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>

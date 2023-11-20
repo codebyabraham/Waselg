@@ -140,17 +140,17 @@ function About() {
 
       <div
         id="funfacts"
-        style={{ margin: "0rem 0rem" }}
+        style={{ margin: "4.5rem 0rem"}}
         class="row text-start align-items-center"
       >
-        <div id="aims" class="col-lg-6">
-          <h5 id="primary" class="fs-6 my-4 text-white">
-            CERTIFICATE OF INDIGENESHIP
+        <div class="col-lg-5 mx-auto py-5">
+          <h5 id="primary" class="fs-5 my-1 text-white">
+            WASE CERTIFICATE OF INDIGENESHIP
           </h5>
-          <h3 id="primary1" class="fs-3 my-4 text-white">
+          <h3 id="primary1" class="fw-bolder mb-0 text-white">
             Aims and Objectives
           </h3>
-          <h3 id="primary2" class="fs-5 my-4 text-success">
+          <h3 id="summary" class="fw-bold mb-5">
             Summary
           </h3>
           <p id="parag" class="fs-5 text-white">
@@ -159,25 +159,26 @@ function About() {
             bureaucratic hurdles and reduce the time and effort required to
             complete the application.
           </p>
-          <p className="text-white">
+          <p className="text-white fs-5">
             We aim to promote and preserve the cultural heritage of indigenous
             communities by facilitating the issuance of indigenous certificates.
             This, in turn, helps individuals and communities maintain a strong
             connection to their roots and traditions.
           </p>
+          {/* <Link to="#" id='btn2' class="btn my-4 fs-4 col-md-6 rounded-pill">Go somewhere</Link> */}
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5 mx-auto py-5">
           <div class="container col-12 text-center">
             <div class="row row-cols-md-12">
-              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
                 <div class="fs-1 fw-bolder">{count}</div>
                 <div className="text-white fs-4 fw-bold">Application</div>
               </div>
-              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
                 <div class="fs-1 fw-bolder">{count2}</div>
                 <div className="text-white fs-4 fw-bold">Process</div>
               </div>
-              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
                 <div class="fs-1 fw-bolder">{count3}</div>
                 <div className="text-white fs-4 fw-bold">Awards</div>
               </div>

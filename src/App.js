@@ -7,7 +7,7 @@ import Vnin from "./pages/Vnin.js";
 import Register from "./pages/Register.js";
 import Payment from "./pages/Payment.js";
 import Success from "./pages/success.js";
-import PrivateRoute from "./Utils/privateroute.js";
+import PrivateRoute from "./utils/privateroute.js";
 
 function App() {
   return (

@@ -5,14 +5,13 @@ function Footer() {
   return (
     <>
       <div
-        id="bottom"
-        style={{ padding: "5vh 0 0", position: "relative" }}
+        style={{ padding: "5vh 0 0" }}
         className="container-fluid bg-black text-white mx-auto"
       >
         <div className="container">
           <div className="row">
-            <div className="col-md-4">
-              <h3 style={{ color: "#ffff", fontWeight: "800" }}>
+            <div className="col-md-4 p-4">
+              <h3 class="mb-5" style={{ color: "#ffff", fontWeight: "800" }}>
                 Wase LG Indigene Certification
               </h3>
               <p className="fs-5">
@@ -23,8 +22,8 @@ function Footer() {
               </p>
             </div>
 
-            <div className="col-md-4">
-              <h3 style={{ color: "#ffff", fontWeight: "800" }}>Services</h3>
+            <div className="col-md-4 p-4">
+              <h3 class="mb-5" style={{ color: "#ffff", fontWeight: "800" }}>Services</h3>
               <ul className="list-unstyled fs-5">
                 <li>Local Government Certification</li>
                 <li>Indigene Verification</li>
@@ -32,8 +31,8 @@ function Footer() {
                 <li>Community Recognition</li>
               </ul>
             </div>
-            <div className="col-md-4">
-              <h3 style={{ color: "#ffff", fontWeight: "800" }}>
+            <div className="col-md-4 p-4">
+              <h3 class="mb-5" style={{ color: "#ffff", fontWeight: "800" }}>
                 Connect with Us
               </h3>
               <ul className="list-unstyled fs-5">

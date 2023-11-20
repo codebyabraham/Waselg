@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-import "../App.css";
-import service_01 from "../images/service_01.jpg";
-import service_02 from "../images/service_02.jpg";
-import service_03 from "../images/service_03.jpg";
-import zumarock from "../images/more-info.jpg";
+import React, { useState, useEffect } from 'react';
+// import {Link} from 'react-router-dom'
+import '../App.css'
+import service_01 from '../images/service_01.jpg';
+import service_02 from '../images/service_02.jpg';
+import service_03 from '../images/service_03.jpg';
+import zumarock from '../images/more-info.jpg'
 
 function HomeContent() {
   const [count, setCount] = useState(0);
@@ -113,14 +114,14 @@ function HomeContent() {
       </div>
       <div
         id="funfacts"
-        style={{ margin: "4.5rem 0.5rem" }}
+        style={{ margin: "4.5rem 0rem"}}
         class="row text-start align-items-center"
       >
-        <div id="aims" class="col-lg-6">
+        <div class="col-lg-5 mx-auto py-5">
           <h5 id="primary" class="fs-5 my-1 text-white">
             WASE CERTIFICATE OF INDIGENESHIP
           </h5>
-          <h3 id="primary1" class="fw-bolder text-white">
+          <h3 id="primary1" class="fw-bolder mb-0 text-white">
             Aims and Objectives
           </h3>
           <h3 id="summary" class="fw-bold mb-5">
@@ -140,18 +141,18 @@ function HomeContent() {
           </p>
           {/* <Link to="#" id='btn2' class="btn my-4 fs-4 col-md-6 rounded-pill">Go somewhere</Link> */}
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-5 mx-auto py-5">
           <div class="container col-12 text-center">
             <div class="row row-cols-md-12">
-              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
                 <div class="fs-1 fw-bolder">{count}</div>
                 <div className="text-white fs-4 fw-bold">Application</div>
               </div>
-              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
                 <div class="fs-1 fw-bolder">{count2}</div>
                 <div className="text-white fs-4 fw-bold">Process</div>
               </div>
-              <div id="counts" class="col-md-5 bg-dark p-5 m-2">
+              <div id="counts" class="col-md-5 bg-dark p-5 m-1">
                 <div class="fs-1 fw-bolder">{count3}</div>
                 <div className="text-white fs-4 fw-bold">Awards</div>
               </div>
@@ -161,11 +162,11 @@ function HomeContent() {
         </div>
       </div>
       <div class="container mb-5 mx-auto">
-        <div class="row ">
+        <div id="card-section" class="row d-flex align-items-center">
           <div class="col-md-6 p-0">
             <img src={zumarock} class="img-fluid col-12" alt="..." />
           </div>
-          <div id="card-section" class="col-md-6 p-5">
+          <div  class="col-md-6 p-5">
             <div>
               <p class="fs-5">
                 Administratively, Wase is divided into four districts, namely:

@@ -22,7 +22,6 @@ function Success() {
               🎉🎉🎉!
             </span>
           </p>
-
           <div className="text-center">
             <Link to="/" className="btn btn-normal btn-dark m-5">
               Back to Home <FcHome size={35} />

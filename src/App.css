@@ -87,6 +87,17 @@ nav{
         text-decoration: none;
     }
     #bttt{
+        border: 1px solid green;
+        border-radius:5px;
+        color: #000;
+        padding-left: 10px;
+    }
+    #bttt:hover{
+        background-color: green;
+        color: #ffffff;
+        
+    }
+    #bttt{
 
         color: #000;
     }

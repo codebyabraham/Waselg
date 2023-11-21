@@ -30,7 +30,7 @@ function Navbar() {
     <>
       <nav class="navbar navbar-dark navbar-expand-lg py-2 mb-5 fixed-top">
         <div class="container mx-auto">
-          <Link class="navbar-brand text-white fs-4 fw-bolder text-sm" to="/">
+          <Link class="navbar-brand text-white fs-5 fw-bolder text-sm" to="/">
             CERTIFICATE OF INDIGENESHIP
           </Link>
 

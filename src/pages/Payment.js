@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { usePaystackPayment } from "react-paystack";
 import "./payment.css";
-// import img from "../Assets/plateau.png";
 import { useNavigate } from "react-router-dom";
 
 import Footer from "../component/Footer";

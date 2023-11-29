@@ -35,15 +35,18 @@ function Navbar() {
           </Link>
 
           <button
-            style={{ border: "1px white solid" }}
-            className="navbar-toggler "
+            style={{ width: "30px" }}
+            className="navbar-toggler p-1"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span
+              class="navbar-toggler-icon"
+              style={{ width: "15px", height: "15px" }}
+            ></span>
           </button>
 
           <div

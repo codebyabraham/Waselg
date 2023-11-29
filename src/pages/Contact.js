@@ -114,8 +114,8 @@ function Contact() {
           </div>
 
           <div class="col text-center p-5">
-            <button type="submit" class="btn btn-primary col-5">
-              Sign in
+            <button type="submit" class="btn btn-success col-5">
+              Submit
             </button>
           </div>
         </form>

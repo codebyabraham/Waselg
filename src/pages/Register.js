@@ -8,6 +8,9 @@ import axios from "axios";
 import image2 from "../images/laoding.gif";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import PhoneInput from "react-phone-number-input";
+
+import "react-phone-number-input/style.css"; // Import the styles
 
 function Register() {
   useEffect(() => {
@@ -18,7 +21,7 @@ function Register() {
   const [loading, setLoading] = useState(false);
   // State to hold the generated application numbers
   const [Application_nos, setApplicationNumbers] = useState(null);
-
+  const [Phonenos, setPhonenos] = useState("");
   // Function to generate a random integer between min (inclusive) and max (exclusive)
   const getRandomInt = (min, max) =>
     Math.floor(Math.random() * (max - min) + min);
@@ -43,7 +46,6 @@ function Register() {
       Names = data1.name;
       // Continue using Imagedata and Names as needed
     } else {
-      console.error("No data stored");
       // Handle the case where no data is found
     }
   } catch (error) {
@@ -88,6 +90,7 @@ function Register() {
   const [Family, setFamily] = useState("");
   const [Landmark, setLandmark] = useState("");
   const [Email, setEmail] = useState("");
+  const [Gender, setGender] = useState("");
   // const [imageUrl, setImageUrl] = useState("");
   const data = {
     Selected,
@@ -99,6 +102,8 @@ function Register() {
     Imagedata,
     Email,
     Application_nos,
+    Phonenos,
+    Gender,
   };
 
   const handleSubmit = async (e) => {
@@ -152,7 +157,7 @@ function Register() {
           navigate("/register");
           break;
         default:
-          toast("Registered successfull");
+          toast("Registered successfully");
           navigate("/success");
           break;
       }
@@ -174,7 +179,7 @@ function Register() {
             src={image2} // Replace with the path to your loading GIF
             alt="Loading"
           />
-          <h4>Generating...</h4>
+          <h2>Please Wait...</h2>
         </div>
       )}{" "}
       <div className="row my-5">
@@ -224,6 +229,28 @@ function Register() {
                 }
               </select>
             </div>
+            <div className="mb-4">
+              <label
+                className="form-label mb-0 fs-5 fw-bold"
+                htmlFor="formGroupGenderSelect"
+              >
+                Gender
+                <span className="form-box-asterix">*</span>
+              </label>
+            </div>
+            <select
+              className="form-select px-3 py-2 fs-5 rounded-pill shadow mb-4"
+              value={Gender}
+              onChange={(e) => setGender(e.target.value)}
+              required
+            >
+              <option value="" disabled>
+                Select Gender
+              </option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+
             <div>
               <label
                 class="form-label mb-0 fs-5 fw-bold"
@@ -251,6 +278,17 @@ function Register() {
               onChange={(e) => setAddress1(e.target.value)}
               required
             />
+            <label class="form-label mb-0 fw-bold fs-5">
+              Phone Number<span className="form-box-asterix">*</span>
+            </label>
+            <PhoneInput
+              className="form-control px-3 py-2 fs-5 rounded-pill shadow mb-4"
+              value={Phonenos}
+              placeholder="Enter phone number"
+              onChange={(value) => setPhonenos(value)}
+              required
+            />
+
             <label class="form-label mb-0 fs-5 fw-bold">
               Address line 2<span className="form-box-asterix">*</span>
             </label>
@@ -284,7 +322,7 @@ function Register() {
             <input
               className="btn btn-success rounded-pill col-7 btn-md fs-4"
               type="submit"
-              value="Continue"
+              value="Submit"
             />
           </form>
         </div>

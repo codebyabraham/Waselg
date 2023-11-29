@@ -28,15 +28,17 @@ function Navbar2() {
 
   return (
     <>
-      <nav style={{backgroundColor:'rgba(10,150,10,0.8603816526610644)'}} class="navbar navbar-expand-lg p-2 mb-5 ">
+      <nav
+        style={{ backgroundColor: "rgba(10,150,10,0.8603816526610644)" }}
+        class="navbar navbar-expand-lg p-2 mb-5 "
+      >
         <div class="container mx-auto">
-          <Link class="navbar-brand text-white fs-5 fw-bolder" to="/">
+          <Link class="navbar-brand text-white fs-5 fw-bolder text-sm" to="/">
             {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
             CERTIFICATE OF INDIGENESHIP
           </Link>
 
           <button
-            
             class="navbar-toggler bg-white"
             type="button"
             data-bs-toggle="offcanvas"

@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 // import {Link} from 'react-router-dom'
-import '../App.css'
-import service_01 from '../images/service_01.jpg';
-import service_02 from '../images/service_02.jpg';
-import service_03 from '../images/service_03.jpg';
-import zumarock from '../images/more-info.jpg'
+import "../App.css";
+import service_01 from "../images/service_01.jpeg";
+import service_02 from "../images/service_02.jpeg";
+import service_03 from "../images/service_03.jpeg";
+import zumarock from "../images/more-info.jpg";
 
 function HomeContent() {
   const [count, setCount] = useState(0);
@@ -59,14 +59,19 @@ function HomeContent() {
       >
         <div class="col-md-12">
           <h2 class="mb-4 mx-auto fs-1 fw-bolder text-center col-md-6 pb-2">
-            WASSS & <span style={{ color: "#6acf06" }}>YOU</span>
+            WASE & <span style={{ color: "#6acf06" }}>YOU</span>
           </h2>
           <p className="text-center fs-4 fw-bold">
             Unlock Your Heritage: Your Indigenous Certificate Awaits!
           </p>
           <div class="row justify-content-center">
             <div id="review" class="col-lg-3 rounded shadow m-3 p-4">
-              <img src={service_01} class="card-img-top" alt="..." />
+              <img
+                src={service_01}
+                class="card-img-top"
+                style={{ height: "400px" }}
+                alt="..."
+              />
               <div class="card-body fs-4">
                 <h5 class="card-title my-2 fs-3 fw-bold">Easy Application</h5>
                 <p class="card-text">
@@ -95,7 +100,7 @@ function HomeContent() {
               </div>
             </div>
             <div id="review" class="col-lg-3 rounded shadow m-3 p-4">
-              <img src={service_03} class="card-img-top" alt="..." />
+              <img src={service_03} class="card-img-top col-12" alt="..." />
               <div class="card-body fs-4">
                 <h5 class="card-title my-2 fs-3 fw-bold">
                   Clear Fee Structure
@@ -114,7 +119,7 @@ function HomeContent() {
       </div>
       <div
         id="funfacts"
-        style={{ margin: "4.5rem 0rem"}}
+        style={{ margin: "4.5rem 0rem" }}
         class="row text-start align-items-center"
       >
         <div class="col-lg-5 mx-auto py-5">
@@ -166,7 +171,7 @@ function HomeContent() {
           <div class="col-md-6 p-0">
             <img src={zumarock} class="img-fluid col-12" alt="..." />
           </div>
-          <div  class="col-md-6 p-5">
+          <div class="col-md-6 p-5">
             <div>
               <p class="fs-5">
                 Administratively, Wase is divided into four districts, namely:

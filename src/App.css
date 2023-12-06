@@ -4,6 +4,10 @@
 #text2, #text3{
     text-shadow: 0px 1px 21px rgba(0,0,0,1);
 }
+#butto:hover{
+    border-bottom: #6acf06 1px solid;
+    color: #6acf06;
+}
 nav{
     background: rgba(2, 0, 36, 0.247);
 }
@@ -15,7 +19,7 @@ nav{
     border-bottom: #6acf06 1px solid;
     color: #6acf06;
 }
-#bttt{
+#bttt, #butto{
     color: white;
 }
 #button{
@@ -56,7 +60,7 @@ nav{
         
         
     }
-    #bttt{
+    #bttt, #butto{
         border: 1px solid green;
         border-radius:5px;
         color: #000;
@@ -69,13 +73,12 @@ nav{
     }
   }
 
-  @media (min-width: 577px) and (max-width: 768px) {
+  @media (min-width: 577px) and (min-width: 768px) {
     /* Medium screens */
     #text-content{
         margin-top: -40%;
             position: absolute;
             top: 0px;
-        
     }
     #button{
         background-color:green;
@@ -112,6 +115,32 @@ nav{
         
     }
   }
+  @media (min-width: 712px) {
+    #text-content{
+       
+            position: absolute;
+            top: 0px;
+    }
+    #button{
+       display: none;
+    }
+    #bttt{
+        border: 1px solid green;
+        border-radius:5px;
+        color: #000;
+        padding-left: 10px;
+    }
+    #bttt:hover{
+        background-color: green;
+        color: #ffffff;
+        
+    }
+    #bttt{
+
+        color: #000;
+    }
+  }
+
   #text1{
     margin-bottom: 15px;
     text-transform: uppercase;
@@ -152,9 +181,7 @@ nav{
 #card-section, #review{
     background-color: #f7f7f7;
 }
-/* #aims{
-    padding: 5rem;
-} */
+
 #review{
     padding: 1rem 2rem;
 }

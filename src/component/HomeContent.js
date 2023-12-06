@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-// import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 import "../App.css";
+import "./HomeContent.css";
 import service_01 from "../images/service_01.jpeg";
 import service_02 from "../images/service_02.jpeg";
 import service_03 from "../images/service_03.jpeg";
@@ -57,6 +58,13 @@ function HomeContent() {
         style={{ margin: "4.5rem 0.5rem" }}
         class="p-3 rounded-4 row justify-content-center text-start py-5 "
       >
+        <Link
+          to="/payment"
+          id="button"
+          class="rounded-pill apply text-center mb-4"
+        >
+          Application Form
+        </Link>
         <div class="col-md-12">
           <h2 class="mb-4 mx-auto fs-1 fw-bolder text-center col-md-6 pb-2">
             WASE & <span style={{ color: "#6acf06" }}>YOU</span>

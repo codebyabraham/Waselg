@@ -6,7 +6,7 @@ import image from "../images/image.jpeg";
 import image2 from "../images/laoding.gif";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "./Loading.css";
+// import "./Loading.css";
 
 function Vnin() {
   useEffect(() => {

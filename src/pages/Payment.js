@@ -19,7 +19,7 @@ function Payment() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle email submission or payment processing here
-    console.log(`Email submitted: ${email}`);
+
     // Add payment processing logic here if needed
   };
 
@@ -70,8 +70,8 @@ function Payment() {
       <div className="payment-container my-5 mx-2 p-3">
         <h1>Payment for Certificate of Indegene</h1>
         <form onSubmit={handleSubmit}>
-          <input 
-            class='my-5'
+          <input
+            className="my-5"
             type="email"
             id="email"
             placeholder="Enter your email"

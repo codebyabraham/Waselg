@@ -8,8 +8,6 @@ import { Carousel } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 function HomeBanner() {
-  
-
   return (
     <>
       <Carousel className="custom-carousel">
@@ -20,12 +18,12 @@ function HomeBanner() {
           >
             <h3 id="text1">Your Heritage, Your Identity</h3>
             <h5 id="text2">we are here</h5>
-            <p id='text3' class="fs-5">
+            <p id="text3" class="fs-5">
               Our Identity is from the Local Government, Let Us document it
             </p>
-            <Link to="/payment" id="button" class="rounded-pill apply">
+            {/* <Link to="/payment" id="button" class="rounded-pill apply">
               Application Form
-            </Link>
+            </Link> */}
           </div>
           <img
             className="d-block w-100 custom-carousel-image"
@@ -41,12 +39,12 @@ function HomeBanner() {
             <h3 id="text1">Your Heritage, Your Identity</h3>
             <h5 id="text2">we are here</h5>
 
-            <p id='text3' class="fs-5">
+            <p id="text3" class="fs-5">
               Our Greatness as a Nation starts from the Local Governments.
             </p>
-            <Link to="/payment" id="button" class="rounded-pill apply">
+            {/* <Link to="/payment" id="button" class="rounded-pill apply">
               Application Form
-            </Link>
+            </Link> */}
           </div>
           <img
             className="d-block w-100 custom-carousel-image"
@@ -66,12 +64,12 @@ function HomeBanner() {
           >
             <h3 id="text1">Your Heritage, Your Identity</h3>
             <h5 id="text2">we are here</h5>
-            <p id='text3' class="fs-5">
+            <p id="text3" class="fs-5">
               Local Governments, the building block of the Nation.
             </p>
-            <Link to="/payment" id="button" class="rounded-pill apply">
+            {/* <Link to="/payment" id="button" class="rounded-pill apply">
               Application Form
-            </Link>
+            </Link> */}
           </div>
         </Carousel.Item>
       </Carousel>

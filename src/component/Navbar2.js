@@ -30,49 +30,52 @@ function Navbar2() {
     <>
       <nav
         style={{ backgroundColor: "rgba(10,150,10,0.8603816526610644)" }}
-        class="navbar navbar-expand-lg p-2 mb-5 "
+        className="navbar navbar-expand-lg p-2 mb-5 "
       >
-        <div class="container mx-auto">
-          <Link class="navbar-brand text-white fs-5 fw-bolder text-sm" to="/">
+        <div className="container mx-auto">
+          <Link
+            className="navbar-brand text-white fs-5 fw-bolder text-sm"
+            to="/"
+          >
             {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
             CERTIFICATE OF INDIGENESHIP
           </Link>
 
           <button
-            class="navbar-toggler bg-white"
+            className="navbar-toggler bg-white"
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasDarkNavbar"
             aria-controls="offcanvasDarkNavbar"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
 
           <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
+            className="offcanvas offcanvas-end"
+            tabIndex="-1"
             id="offcanvasDarkNavbar"
             aria-labelledby="offcanvasDarkNavbarLabel"
           >
-            <div class="offcanvas-header">
-              <Link class="navbar-brand" to="/">
+            <div className="offcanvas-header">
+              <Link className="navbar-brand" to="/">
                 {/* <img id="logo" style={{width: '170px', height: '40px'}} src={logo} alt='logo' /> */}
               </Link>
               <button
                 type="button"
-                class="btn-close btn-close-success"
+                className="btn-close btn-close-success"
                 data-bs-dismiss="offcanvas"
                 aria-label="Close"
               ></button>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li class="nav-item m-3">
+            <div className="offcanvas-body">
+              <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li className="nav-item m-3">
                   <Link
                     type="button"
                     id="bttt"
-                    class="nav-link fs-3"
+                    className="nav-link fs-3"
                     aria-current="page"
                     to="/"
                   >
@@ -80,20 +83,20 @@ function Navbar2() {
                   </Link>
                 </li>
 
-                <li class="nav-item m-3">
+                <li className="nav-item m-3">
                   <Link
                     id="bttt"
-                    class="nav-link fs-3"
+                    className="nav-link fs-3"
                     to="/contact"
                     role="button"
                   >
                     Contact Us
                   </Link>
                 </li>
-                <li class="nav-item m-3">
+                <li className="nav-item m-3">
                   <Link
                     id="bttt"
-                    class="nav-link fs-3"
+                    className="nav-link fs-3"
                     to="/about"
                     role="button"
                   >
@@ -105,6 +108,7 @@ function Navbar2() {
           </div>
         </div>
       </nav>
+      ;
     </>
   );
 }

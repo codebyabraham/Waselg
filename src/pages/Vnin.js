@@ -6,11 +6,26 @@ import image from "../images/image.jpeg";
 import image2 from "../images/laoding.gif";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-// import "./Loading.css";
+import "./loading.css";
 
 function Vnin() {
   useEffect(() => {
     document.title = "WaseLg | VirtualNIN";
+    const showWarningPopup = () => {
+      toast.warning(
+        "Please note that VNIN can only be used once. Ensure to input the correct VNIN as wrongly or incomplete VNIN input will result in a fresh payment for the application. Thank you.",
+        {
+          position: "top-center", // Set position to top-center
+          autoClose: 25000, // 5000 milliseconds = 5 seconds
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        }
+      );
+    };
+    showWarningPopup();
   }, []);
   const [vNIN, setvNIN] = useState("");
   const [loading, setLoading] = useState(false);
@@ -36,7 +51,19 @@ function Vnin() {
     imageData: responseData
       ? `data:image/jpeg;base64,${responseData.photograph}`
       : "",
+    gender: responseData ? `${responseData.gender}` : "",
   };
+
+  useEffect(() => {
+    // Check if Data is defined
+    if (typeof Data !== "undefined") {
+      // If Data is defined, stringify and store in local storage
+      localStorage.setItem("Data", JSON.stringify(Data));
+    } else {
+      // If Data is undefined, handle it as per your requirements (e.g., set a default value, show an error message, etc.)
+      console.error("Data is undefined. Please provide a valid value.");
+    }
+  }, [responseData]); // This useEffect will run whenever the Data prop changes
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -49,6 +76,7 @@ function Vnin() {
       const responseDataFromApi = response.data.message;
 
       setResponseData(responseDataFromApi);
+      // console.log(responseDataFromApi);
 
       switch (responseDataFromApi) {
         case "":
@@ -62,7 +90,10 @@ function Vnin() {
             progress: undefined,
             theme: "light",
           });
-          navigate("/Virtualnin");
+          localStorage.removeItem("transid");
+          setTimeout(() => {
+            navigate("/payment");
+          }, 4000);
           break;
         case undefined:
           toast("vNIN unverified, please try again", {
@@ -75,7 +106,10 @@ function Vnin() {
             progress: undefined,
             theme: "light",
           });
-          navigate("/Virtualnin");
+          localStorage.removeItem("transid");
+          setTimeout(() => {
+            navigate("/payment");
+          }, 4000);
           break;
         case null:
           toast("vNIN unverified, please try again", {
@@ -88,12 +122,14 @@ function Vnin() {
             progress: undefined,
             theme: "light",
           });
-          navigate("/Virtualnin");
+          localStorage.removeItem("transid");
+          setTimeout(() => {
+            navigate("/payment");
+          }, 4000);
           break;
         default:
           toast("VNIN verified");
           // Convert the object to a JSON string before storing
-          localStorage.setItem("Data", JSON.stringify(Data));
           break;
       }
       setLoading(false);
@@ -105,7 +141,10 @@ function Vnin() {
 
   return (
     <>
-      <ToastContainer />
+      <ToastContainer
+        className="custom-toast-container" // Apply a custom class for styling
+        style={{ width: "400px", textAlign: "center" }}
+      />
       {loading && (
         <div className="overlay">
           <img
@@ -120,7 +159,7 @@ function Vnin() {
         <div className="col-md-12 mb-3">
           <div className="rounded-4 text-white bg-success">
             <div className="card-body text-center p-4">
-              <h5 className="card-title">DIAL *346*3*YOUR-NIN*11987#</h5>
+              <h5 className="card-title">DIAL *346*3*YOUR-NIN*119887#</h5>
             </div>
           </div>
         </div>

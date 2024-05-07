@@ -8,6 +8,9 @@
     border-bottom: #6acf06 1px solid;
     color: #6acf06;
 }
+.applyb{
+    background-color:green !important;
+}
 nav{
     background: rgba(2, 0, 36, 0.247);
 }
@@ -32,7 +35,9 @@ nav{
     border: none;
     display: inline-block;
     text-decoration: none;
+    width: 40%;
 }
+
 @media (max-width: 576px) {
     /* Small screens */
     #text-content{
@@ -51,6 +56,8 @@ nav{
         border: none;
         display: inline-block;
         text-decoration: none;
+        width: 40%;
+       
     }
     #text1{
        display: none;
@@ -91,6 +98,7 @@ nav{
         border: none;
         display: inline-block;
         text-decoration: none;
+        width: 40%;
     }
     #bttt{
         border: 1px solid green;
@@ -121,9 +129,9 @@ nav{
             position: absolute;
             top: 0px;
     }
-    #button{
+    /* #button{
        display: none;
-    }
+    } */
     #bttt{
         border: 1px solid green;
         border-radius:5px;

@@ -5,6 +5,7 @@ import AboutBanner from "../component/AboutBanner.js";
 import Footer from "../component/Footer";
 import image from "../images/image.jpeg";
 import axios from "axios";
+import "./loading.css";
 import image2 from "../images/laoding.gif";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -22,6 +23,10 @@ function Register() {
   // State to hold the generated application numbers
   const [Application_nos, setApplicationNumbers] = useState(null);
   const [Phonenos, setPhonenos] = useState("");
+  // Declare state variables for Names and Imagedata
+  const [Names, setNames] = useState("");
+  const [Imagedata, setImagedata] = useState("");
+
   // Function to generate a random integer between min (inclusive) and max (exclusive)
   const getRandomInt = (min, max) =>
     Math.floor(Math.random() * (max - min) + min);
@@ -29,29 +34,11 @@ function Register() {
   // Effect to run once when the component mounts
   useEffect(() => {
     // Generate 6 random application numbers
-    const newApplicationNumber = getRandomInt(100000, 999999);
-
+    const newApplicationNumber = `wslg${getRandomInt(100000, 999999)}`;
+    // console.log(newApplicationNumber);
     // Set the generated numbers in the state
     setApplicationNumbers(newApplicationNumber);
   }, []);
-
-  let Imagedata, Names, storedData; // Declare the variables outside the try-catch block
-
-  try {
-    const storedData = localStorage.getItem("Data");
-
-    if (storedData) {
-      const data1 = JSON.parse(storedData);
-      Imagedata = data1.imageData;
-      Names = data1.name;
-      // Continue using Imagedata and Names as needed
-    } else {
-      // Handle the case where no data is found
-    }
-  } catch (error) {
-    console.error("Error parsing JSON:", error);
-    // Handle the parsing error as needed
-  }
 
   const changeSelectOptionHandler = (event) => {
     setSelected(event.target.value);
@@ -106,6 +93,8 @@ function Register() {
     Gender,
   };
 
+  // console.log(data);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
@@ -116,6 +105,7 @@ function Register() {
         data
       );
       const responseDataFromApi = response.data.message;
+      // console.log(responseDataFromApi);
       switch (responseDataFromApi) {
         case "":
           toast("Kindly attempt to submit again.", {
@@ -128,9 +118,11 @@ function Register() {
             progress: undefined,
             theme: "light",
           });
+
           navigate("/register");
           break;
         case undefined:
+          localStorage.removeItem("transid");
           toast("Kindly attempt to submit again.", {
             position: "top-right",
             autoClose: 5000,
@@ -141,9 +133,12 @@ function Register() {
             progress: undefined,
             theme: "light",
           });
+
           navigate("/register");
+
           break;
         case null:
+          localStorage.removeItem("transid");
           toast("Kindly attempt to submit again.", {
             position: "top-right",
             autoClose: 5000,
@@ -154,7 +149,9 @@ function Register() {
             progress: undefined,
             theme: "light",
           });
+
           navigate("/register");
+
           break;
         default:
           toast("Registered successfully");
@@ -167,6 +164,25 @@ function Register() {
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    try {
+      const storedData = localStorage.getItem("Data");
+
+      if (storedData) {
+        const data1 = JSON.parse(storedData);
+        setNames(data1.name || "");
+        setImagedata(data1.imageData || "");
+        setGender(data1.gender || "");
+        // Continue using Imagedata and Names as needed
+      } else {
+        // Handle the case where no data is found
+      }
+    } catch (error) {
+      // console.error("Error parsing JSON:", error);
+      // Handle the parsing error as needed
+    }
+  }, []);
 
   return (
     <>
@@ -192,7 +208,7 @@ function Register() {
         <div className="container col-md-5 p-5 bg-secondary fs-3">
           <p>Name: {Names}</p>
 
-          {storedData ? (
+          {localStorage.getItem("Data") ? (
             // eslint-disable-next-line no-unused-vars
             <img src={Imagedata} alt="img" style={{ width: "100%" }} />
           ) : (
@@ -205,9 +221,9 @@ function Register() {
             <label class="mb-0 fw-bold fs-5">
               District<span className="form-box-asterix">*</span>
             </label>
-            <div class="col-12 my-2">
+            <div className="col-12 my-2">
               <select
-                class="form-select px-3 py-2 fs-5 rounded-pill shadow mb-4 form-select-sm"
+                className="form-select px-3 py-2 fs-5 rounded-pill shadow mb-4 form-select-sm"
                 onChange={changeSelectOptionHandler}
               >
                 <option>Choose...</option>
@@ -219,7 +235,7 @@ function Register() {
             </div>
 
             <div>
-              <label class="mb-0 fs-5 fw-bold">
+              <label className="mb-0 fs-5 fw-bold">
                 Wards<span className="form-box-asterix">*</span>
               </label>
               <select class="form-select form-select-sm px-3 py-2 fs-5 rounded-pill shadow mb-4">
@@ -229,31 +245,9 @@ function Register() {
                 }
               </select>
             </div>
-            <div className="mb-4">
-              <label
-                className="form-label mb-0 fs-5 fw-bold"
-                htmlFor="formGroupGenderSelect"
-              >
-                Gender
-                <span className="form-box-asterix">*</span>
-              </label>
-            </div>
-            <select
-              className="form-select px-3 py-2 fs-5 rounded-pill shadow mb-4"
-              value={Gender}
-              onChange={(e) => setGender(e.target.value)}
-              required
-            >
-              <option value="" disabled>
-                Select Gender
-              </option>
-              <option value="Male">Male</option>
-              <option value="Female">Female</option>
-            </select>
-
             <div>
               <label
-                class="form-label mb-0 fs-5 fw-bold"
+                className="form-label mb-0 fs-5 fw-bold"
                 for="formGroupFamilyInput"
               >
                 Family Head Name
@@ -268,7 +262,7 @@ function Register() {
               required
             />
 
-            <label class="form-label mb-0 fw-bold fs-5">
+            <label className="form-label mb-0 fw-bold fs-5">
               Address Line 1<span className="form-box-asterix">*</span>
             </label>
             <input
@@ -289,7 +283,7 @@ function Register() {
               required
             />
 
-            <label class="form-label mb-0 fs-5 fw-bold">
+            <label className="form-label mb-0 fs-5 fw-bold">
               Address line 2<span className="form-box-asterix">*</span>
             </label>
             <input
@@ -309,7 +303,7 @@ function Register() {
               onChange={(e) => setLandmark(e.target.value)}
               required
             />
-            <label class="form-label mb-0 fs-5 fw-bold">
+            <label className="form-label mb-0 fs-5 fw-bold">
               Email<span className="form-box-asterix">*</span>
             </label>
             <input
